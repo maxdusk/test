@@ -1,0 +1,12 @@
+### SSH connection issue ###
+1) login to remote server through root user by entering password
+2) edit file "nano /etc/ssh/sshd_config"
+3) find and edit following strings:
+PubkeyAuthentication yes
+AuthorizedKeysFile   ./ssh/authorized_keys
+4)restart sshd service "systemctl restart sshd.service"
+5)create user, 
+in the home dir create dir .ssh/:   				"mkdir .ssh"
+add public key into .ssh/authorized_keys file: 			"echo "<pubkey>" > authorized_keys"
+make file only r/w for user					"chmod 0600 authorized_keys"
+change user and group for home dir and files in it 		"chown -R user:user /home/user_dir"

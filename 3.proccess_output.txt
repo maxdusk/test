@@ -1,0 +1,6 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+user           1  0.0  0.0   2500   532 ?        Ss   17:52   0:00 /cocalc/bin/tini -v -g -- sh -c env -i /cocalc/init/init.sh $COCALC_PROJECT_ID $KUCALC_IMAGE_NAME $COCALC_EXTRA_ENV $COCALC_P
+user           9  0.0  0.0   2616   604 ?        SN   17:52   0:00 sh -c env -i /cocalc/init/init.sh $COCALC_PROJECT_ID $KUCALC_IMAGE_NAME $COCALC_EXTRA_ENV $COCALC_PROJECT_CONFIG $COCALC_NODE
+user          10  8.5  0.3 946024 98708 ?        SNl  17:52   0:07 node --optimize-for-size --gc-interval=100000 --always-compact /cocalc/nvm/versions/node/v14.18.1/lib/node_modules/@cocalc/pr
+user          25  0.0  0.0  12184  6824 ?        SN   17:52   0:00 sshd: /usr/sbin/sshd -D -p 2222 -h /tmp/.cocalc/ssh_host_rsa_key -o PidFile=/tmp/.cocalc/sshd.pid -f /cocalc/init/sshd_config
+user         586  0.2  0.0   8108  6088 pts/0    SNs  17:53   0:00 /bin/bash

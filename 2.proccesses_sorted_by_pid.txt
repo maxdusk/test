@@ -1,0 +1,3 @@
+script=$(ps aux --sort pid)
+
+echo "$script" >> /home/proccesses.txt
