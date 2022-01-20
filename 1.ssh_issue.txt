@@ -5,7 +5,7 @@
 PubkeyAuthentication yes
 AuthorizedKeysFile   ./ssh/authorized_keys
 4)restart sshd service "systemctl restart sshd.service"
-5)create user, 
+5)create user,                                useradd user
 in the home dir create dir .ssh/:   				"mkdir .ssh"
 add public key into .ssh/authorized_keys file: 			"echo "<pubkey>" > authorized_keys"
 make file only r/w for user					"chmod 0600 authorized_keys"
